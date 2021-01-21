@@ -1,0 +1,6 @@
+Pseudo Class Select : 가상 클래스 선택자
+a: link (방문 전 링크)
+a: visited (방문 후 링크)
+a: hover (마우스를 올렸을 때)
+a: active (마우스를 클릭했을 때~떼기 전)
+a: foucs (tap키를 눌렀을 때 이동됨)

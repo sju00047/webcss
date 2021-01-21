@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      ul li {
+        color: red;
+      }
+      /* 직계 하위 selector */
+      #lecture > li {
+        border: 1px solid red;
+        color: blue;
+      }
+      /* selector 다중 선택 */
+      ul, ol {
+        background-color: powderblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+      <li>HTML</li>
+      <li>CSS</li>
+        <ol>
+          <li>selector</li>
+          <li>declaration</li>
+        </ol>
+      <li>JavaScript</li>
+    </ol>
+    <h3>CSS CheatSheet 검색해보기</h3>
+    → Google에서 이미지 검색 <a href="https://www.google.com/search?q=css+cheat+sheet&sxsrf=ALeKk02wqim89XyZfqv9qMWx3fV3NP-Kww:1609822843018&source=lnms&tbm=isch&sa=X&ved=2ahUKEwin9NW1gYTuAhWGHqYKHUfpCCoQ_AUoAXoECBYQAw&biw=1280&bih=881">클릭</a> (스팸 아님) <br>
+    재밌는 게임! → <a href="http://flukeout.github.io">Flukeout</a>
+  </body>
+</html>

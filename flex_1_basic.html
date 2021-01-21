@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: powderblue;
+            height: 200px;
+            display: flex;
+            /* display: flex;가 없으면 자식 태그들의 크기 기준
+            display: flex;가 있으면 부모 태그의 크기 기준 */
+            flex-direction: column-reverse; /* 자식 태그들을 정렬하는 방법 (기본값 = row) */
+        }
+        .item {
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

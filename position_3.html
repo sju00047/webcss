@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #body {
+            padding-top: 30px;
+        }
+        #parent, #other {
+            border: 5px solid tomato;
+        }
+        #large {
+            height: 10000px;
+            background-color: tomato;
+        }
+        #me {
+            background-color: black;
+            color: white;
+            position: fixed; /* 화면위치, 즉, 스크롤과 상관없이 자리가 고정된다. (완전한 독립)*/
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 30px; /* height: 30px;를 주면 body 위쪽이 30px 가려지므로 body에도 padding-top: 30px를 준다. */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   position 속성을 이용해 'me'를 이동시켜보자 (절대위치 개념-fixed)
+    <div id="other">other</div>
+    <div id="parent">
+       parent
+        <div id="me">me</div>
+    </div>
+    <div id="large">large</div>
+</body>
+</html>

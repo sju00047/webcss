@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent, #other, #grand {
+            border: 5px solid tomato;
+        }
+        #grand {
+            position: relative;
+        }
+        #me {
+            background-color: black;
+            color: white;
+            position: absolute; /* position: absolute를 주면 부모태그와 상관없는 위치가 된다. */
+            left: 100px;
+            top: 100px; /* 단, position: absolute를 주더라도, left와 top값을 주지 않으면 부모태그 아래의 기본값(부모태그 기준 left: 0px; top: 0px;)으로 위치한다. */
+        }
+    </style>
+</head>
+<body>
+   position 속성을 이용해 'me'를 이동시켜보자 (절대위치 개념-absolute)
+    <div id="other">other</div>
+    <div id="grand"> /* id="grand"에 position 속성의 기본값인 static을 주지 않고 posision: relative를 주면 그 하위에 있는 id="me"는 id="grand" 내부의 position 기본값으로 적용된다. */
+       grand
+        <div id="parent">
+           parent
+            <div id="me">me</div>
+        </div>
+    </div>
+</body>
+</html>

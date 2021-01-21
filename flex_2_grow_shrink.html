@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: powderblue;
+            height: 200px;
+            display: flex;
+            flex-direction: rwo;
+        }
+        .item {
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+/*            flex-grow: 1;*/
+        }
+        .item:nth-child(1) {
+            flex-basis: 150px;
+            flex-shrink: 1;
+        }
+        .item:nth-child(2) {
+            flex-basis: 300px;
+            flex-shrink: 1;
+            /* flex-shrink는 flex-grow의 반대개념 */
+            /* flex-shrink: 1; 이면 browser창의 크기가 줄어듦에 따라 .container의 크기가 줄어들 때, .item:nth-child(2)의 크기가 줄어듦 */
+            /* 하지만, flex-shrink: 0;이면 .item:nth-child(2)의 크기가 줄어들지 않는다. */
+/*            flex-grow: 2;*/
+/*            flex-basis: 200px;*/
+            /* 2번째 자식 태그의 기본 크기가 200px로 고정 */
+            /* 단, 부모태그의 flex-direction이 row면 가로 크기, column이면 세로 크기 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      li {
+        color: red;
+      }
+      #idsel {
+        color: blue;
+      }
+      .classsel {
+        color: green;
+      }
+      h6 {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>html</li>
+      <li id="idsel" class="classsel" style="color:powderblue;">css</li>
+      <li>javascript</li>
+    </ul><br>
+    <h3>우선순위 (1>2>3>4)</h3>
+    <h6>무엇이 더 구체적인가 (1)</h6>
+    <ol>
+      <li><strong>style attribute</strong> (예) &lt;li style="color:red;"&gt;</li>
+      <li><strong>id selector</strong> (예) #idsel {color:red;} </li>
+      <li><strong>class selector</strong> (예) .classsel {color:red;}</li>
+      <li><strong>tag slector</strong> (예) li {color:red;}</li>
+    </ol>
+    <h6>무엇이 더 일반적인가 (4)</h6><br>
+    ※예외 !important 속성을 집어넣으면 우선순위가 됨. <br>
+    (예) li {color: red; !important}
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            border: 1px solid gray;
+        }
+        div {
+            border: 5px solid tomato;
+            margin: 10px;
+        }
+        #me {
+            /* position: static 이 기본값 */
+            position: relative;
+            left: 100px;
+            right: 100px;
+            top: 100px;
+            bottom: 100px; /* 겹칠 때는 left > right ,,,, top > bottom */
+        }
+    </style>
+</head>
+<body>
+   position 속성을 이용해 'me'를 이동시켜보자 (상대위치 개념-relative)
+    <div id="other">other</div>
+    <div id="parent">
+       parent
+        <div id="me">me</div>
+    </div>
+</body>
+</html>

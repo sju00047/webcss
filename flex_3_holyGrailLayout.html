@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+        }
+        .content nav {
+            border-right: 1px solid gray;
+        }
+        .content aside {
+            border-left: 1px solid gray;
+        }
+        nav, aside {
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main {
+            padding: 10px;
+        }
+        nav {
+            order: -1; /* order는 flex내 자식태그들의 순서를 지정하는 속성 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+           <main> <!-- Lorem ipsum 단축키: Lorem ipsum 치고 tap키 -->
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, minus ad quasi laudantium, deserunt quam, quaerat molestiae dicta vitae nobis dolorem itaque. Accusantium laborum velit beatae temporibus odit corporis cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, minus ad quasi laudantium, deserunt quam, quaerat molestiae dicta vitae nobis dolorem itaque. Accusantium laborum velit beatae
+            </main>
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <aside>
+                <a href="https://opentutorials.org/module/2367/13526" target="_blank">tip페이지</a>
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1" target="_blank">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

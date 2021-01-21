@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (min-width:600px) {
+            body {
+                background-color: blue;
+            }
+        }
+        @media (max-width:600px) {
+            body {
+                background-color: green;
+            }
+        }
+        @media (max-width:500px) {
+            body {
+                background-color: red;
+                /* max-width는 이하 */
+                /* min-width는 이상 */
+            }
+        }
+        /* 주의사항 */
+        /* 컴퓨터는 위에서 아래로 읽어내려오므로 media query를 하단에 위치시키는 것이 유리하다. 상단에 위치시켜놓을 경우 코딩이 적용되지 않을 수 있다. */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
